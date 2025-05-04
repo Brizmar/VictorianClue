@@ -1,0 +1,57 @@
+Inicio_del_programa:
+  - Transición: "Menú de inicio"
+Menú_de_inicio:
+  - Elementos:
+      - Imagen de fondo
+      - Música ambiental
+      - Botones: [Jugar, Salir]
+  - Decisión: "¿Jugador elige 'Jugar'?"
+    Opciones:
+      - Sí: Seleccionar_historia_aleatoria
+      - No: Fin
+Seleccionar_historia_aleatoria:
+  - Acción: "Seleccionar historia aleatoria (1 de 5)"
+  - Transición: Cargar_caso
+Cargar_caso:
+  - Acción: "Cargar caso: culpable, arma, lugar reales"
+  - Transición: Mostrar_narrativa_inicial
+Mostrar_narrativa_inicial:
+  - Acción: "Mostrar narrativa inicial del caso"
+  - Transición: Presentar_lugares_para_investigar
+Presentar_lugares_para_investigar:
+  - Lugares: [Biblioteca, Jardín, Comedor]
+  - Transición: Jugador_elije_lugar
+Jugador_elije_lugar:
+  - Acción: "Mostrar pista del lugar elegido"
+  - Decisión: "¿Quiere volver o visitar otro lugar?"
+    Opciones:
+      - Volver: Jugador_elije_lugar
+      - Otro_lugar: Mostrar_pista
+Mostrar_pista:
+  - Acción: "Mostrar pista del lugar elegido"
+  - Transición: Menú_deducción_final
+Menú_deducción_final:
+  - Opciones:
+      - Elegir culpable
+      - Elegir arma
+      - Elegir locación
+  - Transición: Comparar_deducción
+Comparar_deducción:
+  - Decisión: "¿Acertó todo?"
+    Opciones:
+      - Sí: Mostrar_victoria
+      - No: Mostrar_intento_fallido
+Mostrar_victoria:
+  - Acción: "Mostrar mensaje de victoria + historia completa"
+  - Decisión: "¿Jugar de nuevo?"
+    Opciones:
+      - Sí: Menú_de_inicio
+      - No: Fin
+Mostrar_intento_fallido:
+  - Acción: "Mostrar historia real y mensaje de intento fallido"
+  - Decisión: "¿Jugar de nuevo?"
+    Opciones:
+      - Sí: Menú_de_inicio
+      - No: Fin
+Fin:
+  - Acción: "Fin del programa"
