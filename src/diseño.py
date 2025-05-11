@@ -12,6 +12,7 @@ ROJO         = (180, 50, 50)
 DORADO       = (212, 175, 55)
 AZUL_NOCHE   = (20, 30, 60)
 VERDE_PISTA  = (50, 150, 100)
+VERDE_CLARO = (144, 238, 144)
 
 # 🖋️ Fuentes (asegúrate de tener alguna personalizada si lo deseas)
 FUENTE_TITULO = pygame.font.SysFont("georgia", 48, bold=True)

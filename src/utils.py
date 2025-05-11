@@ -38,3 +38,20 @@ def centrar_superficie(superficie, ancho_ventana, alto_ventana, y=0):
     """Centra horizontalmente una superficie. Se puede indicar la posición Y."""
     rect = superficie.get_rect(center=(ancho_ventana // 2, y))
     return rect
+
+def dividir_texto(texto, fuente, max_ancho):
+    palabras = texto.split()
+    lineas = []
+    linea_actual = ""
+
+    for palabra in palabras:
+        linea_prueba = linea_actual + palabra + " "
+        if fuente.size(linea_prueba)[0] <= max_ancho:
+            linea_actual = linea_prueba
+        else:
+            lineas.append(linea_actual.strip())
+            linea_actual = palabra + " "
+    if linea_actual:
+        lineas.append(linea_actual.strip())
+
+    return lineas
