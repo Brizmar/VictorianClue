@@ -2,71 +2,171 @@
     {
         "titulo": "El susurro en el Salón de Música",
         "narrativa": "Durante el clímax de la velada, cuando los violines acariciaban el aire, un grito rompió la armonía. Lady Genevieve, radiante anfitriona, fue hallada sin vida en el Salón de Música. La gala se tornó tragedia. Nadie pudo salir. El culpable estaba entre ellos.",
+        "culpable": "Profesor Ashcroft",
+        "arma": "Veneno",
+        "lugar": "Salón de Música",
         "lugares": {
             "Biblioteca": "El mayordomo afirma haber visto una figura delgada deslizarse por el pasillo hacia el ala este, sujetando algo pequeño y brillante.",
             "Invernadero": "Una copa caída muestra rastros de veneno. El suelo tiene huellas de tacones finos, probablemente de alguien que no esperaba ensuciarse.",
             "Estudio": "Una carta rota sugiere que Lady Genevieve había descubierto un secreto del Profesor Ashcroft. ¿Era esto un motivo?"
         },
-        "solucion": {
-            "culpable": "Profesor Ashcroft",
-            "arma": "Veneno",
-            "lugar": "Salón de Música"
-        }
+        "sospechosos": [
+            "Profesor Ashcroft",
+            "Madame Belladonna",
+            "Sir Edmund Blackwood",
+            "Lady Arabella Vane",
+            "Conde Mortimer",
+            "Lady Eleanor",
+            "Sir James",
+            "Mayordomo Collins",
+            "Srta. Beatrice Holloway"
+        ],
+        "armas": [
+            "Candelabro",
+            "Revólver",
+            "Veneno",
+            "Bastón",
+            "Daga",
+            "Cuerda",
+            "Estatua de mármol",
+            "Piano de cola",
+            "Tintero de bronce"
+        ]
     },
     {
         "titulo": "Muerte en el Jardín de Invierno",
         "narrativa": "Cuando la tormenta azotó la mansión, todos se refugiaron dentro. Pero al pasar por el Jardín de Invierno, el cuerpo del joven violinista Theo fue hallado bajo la estatua de Neptuno. Fractura en el cráneo. ¿Accidente… o asesinato?",
+        "culpable": "Sir Edmund Blackwood",
+        "arma": "Candelabro",
+        "lugar": "Jardín de Invierno",
         "lugares": {
             "Salón de Baile": "Madame Belladonna fue vista saliendo sola al jardín justo antes de la tormenta.",
             "Cocina": "Faltan algunos utensilios de metal pesado del aparador. La cocinera recuerda que Sir Edmund estaba merodeando, buscando ‘algo contundente’.",
             "Pasillo del ala norte": "Se encontraron restos de barro en la alfombra, en dirección al Jardín. Sólo uno llevaba botas: Sir Edmund."
         },
-        "solucion": {
-            "culpable": "Sir Edmund Blackwood",
-            "arma": "Candelabro",
-            "lugar": "Jardín de Invierno"
-        }
+        "sospechosos": [
+            "Profesor Ashcroft",
+            "Madame Belladonna",
+            "Sir Edmund Blackwood",
+            "Lady Arabella Vane",
+            "Conde Mortimer",
+            "Lady Eleanor",
+            "Sir James",
+            "Mayordomo Collins",
+            "Srta. Beatrice Holloway"
+        ],
+        "armas": [
+            "Candelabro",
+            "Revólver",
+            "Veneno",
+            "Bastón",
+            "Daga",
+            "Cuerda",
+            "Estatua de mármol",
+            "Piano de cola",
+            "Tintero de bronce"
+        ]
     },
     {
         "titulo": "Sombras en el Vestidor Real",
         "narrativa": "Lady Eleanor fue encontrada muerta entre encajes y perlas. El vestidor, símbolo de su vanidad, se volvió su tumba. Nadie oyó nada. La noche avanzaba, pero el crimen ya había sido cometido.",
+        "arma": "Daga",
+        "culpable": "Madame Belladonna",
+        "lugar": "Vestidor Real",
         "lugares": {
             "Vestíbulo principal": "Se vio a Madame Belladonna discutir acaloradamente con Eleanor sobre un collar robado.",
             "Habitación de servicio": "Una daga ceremonial falta de su vitrina. Solo los familiares tienen acceso.",
             "Buhardilla": "Un pañuelo con sangre y las iniciales 'B' fue hallado escondido bajo una tabla suelta."
         },
-        "solucion": {
-            "culpable": "Madame Belladonna",
-            "arma": "Daga",
-            "lugar": "Vestidor Real"
-        }
+        "sospechosos": [
+            "Profesor Ashcroft",
+            "Madame Belladonna",
+            "Sir Edmund Blackwood",
+            "Lady Arabella Vane",
+            "Conde Mortimer",
+            "Lady Eleanor",
+            "Sir James",
+            "Mayordomo Collins",
+            "Srta. Beatrice Holloway"
+        ],
+        "armas": [
+            "Candelabro",
+            "Revólver",
+            "Veneno",
+            "Bastón",
+            "Daga",
+            "Cuerda",
+            "Estatua de mármol",
+            "Piano de cola",
+            "Tintero de bronce"
+        ]
     },
     {
         "titulo": "El crimen bajo la escalera de mármol",
         "narrativa": "Un grito apagado… un golpe sordo… y silencio. El cuerpo de Sir James yacía bajo la gran escalera, con una herida profunda en la sien. El gran reloj marcaba la medianoche. Todos tenían una coartada… ¿o no?",
+        "arma": "Bastón",
+        "culpable": "Lady Arabella Vane",
+        "lugar": "Escalera de mármol",
         "lugares": {
             "Sala de música": "El mayordomo escuchó pasos apresurados bajando las escaleras después del golpe.",
             "Despacho de Sir James": "Se encontró un bastón manchado de sangre, con una flor blanca atada con encaje — como los que Lady Arabella lleva siempre.",
             "Salón de té": "Arabella abandonó el salón 10 minutos antes del hallazgo. Estaba alterada, según los testigos."
         },
-        "solucion": {
-            "culpable": "Lady Arabella Vane",
-            "arma": "Bastón",
-            "lugar": "Escalera de mármol"
-        }
+        "sospechosos": [
+            "Profesor Ashcroft",
+            "Madame Belladonna",
+            "Sir Edmund Blackwood",
+            "Lady Arabella Vane",
+            "Conde Mortimer",
+            "Lady Eleanor",
+            "Sir James",
+            "Mayordomo Collins",
+            "Srta. Beatrice Holloway"
+        ],
+        "armas": [
+            "Candelabro",
+            "Revólver",
+            "Veneno",
+            "Bastón",
+            "Daga",
+            "Cuerda",
+            "Estatua de mármol",
+            "Piano de cola",
+            "Tintero de bronce"
+        ]
     },
     {
         "titulo": "La última carta en la Biblioteca",
         "narrativa": "El Conde Mortimer fue hallado muerto sobre su escritorio. Su última carta se detuvo a mitad de una palabra. Una chimenea encendida, una ventana abierta… y un secreto que murió con él.",
+        "arma": "Revólver",
+        "culpable": "Profesor Ashcroft",
+        "lugar": "Biblioteca",
         "lugares": {
             "Sala de cartas": "El conde discutió en privado con Lady Arabella horas antes. Se oyeron gritos.",
             "Balcón trasero": "Una cuerda de seda cuelga del barandal. Alguien pudo escabullirse o simular una huida.",
             "Estudio del profesor": "Se halló un revólver descargado, con una inscripción: 'Para mi viejo amigo, con confianza' — firmado: Mortimer."
         },
-        "solucion": {
-            "culpable": "Profesor Ashcroft",
-            "arma": "Revólver",
-            "lugar": "Biblioteca"
-        }
+        "sospechosos": [
+            "Profesor Ashcroft",
+            "Madame Belladonna",
+            "Sir Edmund Blackwood",
+            "Lady Arabella Vane",
+            "Conde Mortimer",
+            "Lady Eleanor",
+            "Sir James",
+            "Mayordomo Collins",
+            "Srta. Beatrice Holloway"
+        ],
+        "armas": [
+            "Candelabro",
+            "Revólver",
+            "Veneno",
+            "Bastón",
+            "Daga",
+            "Cuerda",
+            "Estatua de mármol",
+            "Piano de cola",
+            "Tintero de bronce"
+        ]
     }
 ]

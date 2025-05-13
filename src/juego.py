@@ -34,3 +34,32 @@ class Juego:
             arma == historia["arma"] and
             lugar == historia["lugar"]
         )
+    def obtener_opciones_deduccion(self):
+        historia = self.historia_actual
+
+        sospechoso_real = historia["culpable"]
+        arma_real = historia["arma"]
+        lugar_real = historia["lugar"]
+
+        # --- Sospechosos ---
+        sospechosos = historia["sospechosos"]
+        sospechosos_falsos = [s for s in sospechosos if s != sospechoso_real]
+        opciones_sospechoso = random.sample(sospechosos_falsos, 2) + [sospechoso_real]
+        random.shuffle(opciones_sospechoso)
+
+        # --- Armas ---
+        armas = historia["armas"]
+        armas_falsas = [a for a in armas if a != arma_real]
+        opciones_arma = random.sample(armas_falsas, 2) + [arma_real]
+        random.shuffle(opciones_arma)
+
+        # --- Lugares ---
+        lugares_disponibles = list(historia["lugares"].keys())
+        if lugar_real not in lugares_disponibles:
+            lugares_disponibles.append(lugar_real)  # Por si está fuera de los lugares investigables
+        lugares_falsos = [l for l in lugares_disponibles if l != lugar_real]
+        opciones_lugar = random.sample(lugares_falsos, 2) + [lugar_real]
+        random.shuffle(opciones_lugar)
+
+        return opciones_sospechoso, opciones_arma, opciones_lugar
+
