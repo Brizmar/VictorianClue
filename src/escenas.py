@@ -49,7 +49,7 @@ def escena_historia(ventana, historia):
     while not continuar:
         ventana.blit(fondo, (0, 0))
 
-        titulo = renderizar_texto(historia["titulo"], FUENTE_TITULO, DORADO)
+        titulo = renderizar_texto("Haz tu deducción", diseño.FUENTE_TITULO, diseño.DORADO)
         ventana.blit(titulo, titulo.get_rect(center=(ANCHO_VENTANA // 2, 60)))
 
         # Muestra la historia
@@ -171,6 +171,10 @@ def mostrar_pista(ventana, lugar, pista):
         pygame.display.flip()
         reloj.tick(60)
 
+import pygame
+import sys
+import utils  # Cambiar diseño por utils
+
 def escena_deduccion(ventana, juego):
     reloj = pygame.time.Clock()
     opciones_sospechoso, opciones_arma, opciones_lugar = juego.obtener_opciones_deduccion()
@@ -215,16 +219,16 @@ def escena_deduccion(ventana, juego):
         ventana.fill(diseño.AZUL_NOCHE)
 
         # Títulos
-        titulo = diseño.renderizar_texto("Haz tu deducción", diseño.FUENTE_TITULO, diseño.DORADO)
-        ventana.blit(titulo, diseño.centrar_superficie(titulo, diseño.ANCHO_VENTANA, diseño.ALTO_VENTANA, 100))
+        titulo = utils.renderizar_texto("Haz tu deducción", diseño.FUENTE_TITULO, diseño.DORADO)
+        ventana.blit(titulo, utils.centrar_superficie(titulo, diseño.ANCHO_VENTANA, diseño.ALTO_VENTANA, 100))
 
         subtitulo_texto = {
             "sospechoso": "¿Quién fue el culpable?",
             "arma": "¿Con qué arma?",
             "lugar": "¿Dónde ocurrió?"
         }[etapa]
-        subtitulo = diseño.renderizar_texto(subtitulo_texto, diseño.FUENTE_SUBTITULO, diseño.BLANCO)
-        ventana.blit(subtitulo, diseño.centrar_superficie(subtitulo, diseño.ANCHO_VENTANA, diseño.ALTO_VENTANA, 180))
+        subtitulo = utils.renderizar_texto(subtitulo_texto, diseño.FUENTE_SUBTITULO, diseño.BLANCO)
+        ventana.blit(subtitulo, utils.centrar_superficie(subtitulo, diseño.ANCHO_VENTANA, diseño.ALTO_VENTANA, 180))
 
         # Botones
         for _, boton, rect in botones:

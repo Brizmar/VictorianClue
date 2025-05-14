@@ -32,4 +32,3 @@ def crear_boton(texto, fuente, color_texto, color_fondo, ancho, alto):
     rect_texto = texto_render.get_rect(center=(ancho // 2, alto // 2))
     boton.blit(texto_render, rect_texto)
     return boton
-

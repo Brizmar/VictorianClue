@@ -1,6 +1,6 @@
 import pygame
 import sys
-from diseño import ANCHO_VENTANA, ALTO_VENTANA, crear_boton
+from diseño import ANCHO_VENTANA, ALTO_VENTANA
 from escenas import escena_menu, escena_historia, escena_exploracion, escena_deduccion, escena_resultado
 from juego import Juego
 

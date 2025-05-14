@@ -30,9 +30,10 @@ def cargar_json(nombre_archivo):
         print(f"Archivo {nombre_archivo} no encontrado.")
         return []
 
+# Función para renderizar texto en la pantalla
 def renderizar_texto(texto, fuente, color):
-    """Renderiza un texto con una fuente y color específicos."""
-    return fuente.render(texto, True, color)
+    texto_render = fuente.render(texto, True, color)
+    return texto_render
 
 def centrar_superficie(superficie, ancho_ventana, alto_ventana, y=0):
     """Centra horizontalmente una superficie. Se puede indicar la posición Y."""
